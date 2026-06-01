@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/priyankakumari997328-cmyk/fullApp.git'
-            }
-        }
-
         stage('Install Backend') {
             steps {
                 dir('backend') {
